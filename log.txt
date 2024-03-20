@@ -1,0 +1,335 @@
+Python 3.7
+
+Variable and attribute read access:
+   1.9 ns	read_local
+   2.0 ns	read_nonlocal
+   7.0 ns	read_global
+  11.3 ns	read_builtin
+   8.1 ns	read_classvar_from_class
+   7.4 ns	read_classvar_from_instance
+  11.4 ns	read_instancevar
+   8.1 ns	read_instancevar_slots
+  18.4 ns	read_namedtuple
+  10.8 ns	read_boundmethod
+
+Variable and attribute write access:
+   2.6 ns	write_local
+   2.5 ns	write_nonlocal
+   8.9 ns	write_global
+  42.3 ns	write_classvar
+  15.8 ns	write_instancevar
+  10.0 ns	write_instancevar_slots
+
+Data structure read access:
+   7.9 ns	read_list
+   8.0 ns	read_deque
+   8.6 ns	read_dict
+   8.1 ns	read_strdict
+
+Data structure write access:
+   8.6 ns	write_list
+   8.8 ns	write_deque
+  10.8 ns	write_dict
+  10.7 ns	write_strdict
+
+Stack (or queue) operations:
+  29.9 ns	list_append_pop
+  22.4 ns	deque_append_pop
+  22.7 ns	deque_append_popleft
+
+Timing loop overhead:
+   0.1 ns	loop_overhead
+
+-----
+Python 3.8
+Variable and attribute read access:
+   2.4 ns	read_local
+   2.1 ns	read_nonlocal
+   3.1 ns	read_global
+   3.1 ns	read_builtin
+   8.0 ns	read_classvar_from_class
+   7.4 ns	read_classvar_from_instance
+  10.7 ns	read_instancevar
+   8.4 ns	read_instancevar_slots
+   7.4 ns	read_namedtuple
+  12.5 ns	read_boundmethod
+
+Variable and attribute write access:
+   2.5 ns	write_local
+   2.6 ns	write_nonlocal
+   7.8 ns	write_global
+  19.0 ns	write_classvar
+  15.8 ns	write_instancevar
+  10.1 ns	write_instancevar_slots
+
+Data structure read access:
+   7.9 ns	read_list
+   8.4 ns	read_deque
+   8.5 ns	read_dict
+   8.3 ns	read_strdict
+
+Data structure write access:
+   8.3 ns	write_list
+   9.2 ns	write_deque
+  11.0 ns	write_dict
+  10.8 ns	write_strdict
+
+Stack (or queue) operations:
+  22.0 ns	list_append_pop
+  20.0 ns	deque_append_pop
+  20.5 ns	deque_append_popleft
+
+Timing loop overhead:
+   0.1 ns	loop_overhead
+-----
+Python 3.9
+
+Variable and attribute read access:
+   2.5 ns	read_local
+   2.5 ns	read_nonlocal
+   3.9 ns	read_global
+   3.9 ns	read_builtin
+   8.2 ns	read_classvar_from_class
+   7.6 ns	read_classvar_from_instance
+  10.8 ns	read_instancevar
+   8.4 ns	read_instancevar_slots
+   7.4 ns	read_namedtuple
+  15.5 ns	read_boundmethod
+
+Variable and attribute write access:
+   2.5 ns	write_local
+   2.4 ns	write_nonlocal
+   7.6 ns	write_global
+  18.9 ns	write_classvar
+  17.1 ns	write_instancevar
+  10.4 ns	write_instancevar_slots
+
+Data structure read access:
+   8.1 ns	read_list
+   8.6 ns	read_deque
+   9.2 ns	read_dict
+   8.6 ns	read_strdict
+
+Data structure write access:
+   8.3 ns	write_list
+   9.2 ns	write_deque
+  11.8 ns	write_dict
+  11.5 ns	write_strdict
+
+Stack (or queue) operations:
+  21.7 ns	list_append_pop
+  19.6 ns	deque_append_pop
+  20.0 ns	deque_append_popleft
+
+Timing loop overhead:
+   0.1 ns	loop_overhead
+-----
+Python 3.10
+
+Variable and attribute read access:
+   2.1 ns	read_local
+   2.0 ns	read_nonlocal
+   2.8 ns	read_global
+   2.8 ns	read_builtin
+   7.9 ns	read_classvar_from_class
+   7.6 ns	read_classvar_from_instance
+   5.7 ns	read_instancevar
+   3.7 ns	read_instancevar_slots
+   8.3 ns	read_namedtuple
+  16.9 ns	read_boundmethod
+
+Variable and attribute write access:
+   2.4 ns	write_local
+   2.2 ns	write_nonlocal
+   7.3 ns	write_global
+  17.3 ns	write_classvar
+  16.3 ns	write_instancevar
+   9.6 ns	write_instancevar_slots
+
+Data structure read access:
+   7.3 ns	read_list
+   7.9 ns	read_deque
+   8.6 ns	read_dict
+   7.8 ns	read_strdict
+
+Data structure write access:
+   7.7 ns	write_list
+   8.2 ns	write_deque
+  11.5 ns	write_dict
+  10.8 ns	write_strdict
+
+Stack (or queue) operations:
+  21.4 ns	list_append_pop
+  19.0 ns	deque_append_pop
+  19.5 ns	deque_append_popleft
+
+Timing loop overhead:
+   0.1 ns	loop_overhead
+-----
+Python 3.11
+
+Variable and attribute read access:
+   1.5 ns	read_local
+   1.9 ns	read_nonlocal
+   2.2 ns	read_global
+   2.5 ns	read_builtin
+   7.8 ns	read_classvar_from_class
+  10.1 ns	read_classvar_from_instance
+   2.7 ns	read_instancevar
+   2.7 ns	read_instancevar_slots
+   7.9 ns	read_namedtuple
+  20.3 ns	read_boundmethod
+
+Variable and attribute write access:
+   3.4 ns	write_local
+   1.9 ns	write_nonlocal
+   7.9 ns	write_global
+  19.5 ns	write_classvar
+   3.5 ns	write_instancevar
+   3.3 ns	write_instancevar_slots
+
+Data structure read access:
+   3.5 ns	read_list
+   7.5 ns	read_deque
+   6.4 ns	read_dict
+   7.0 ns	read_strdict
+
+Data structure write access:
+   4.3 ns	write_list
+   8.2 ns	write_deque
+   9.2 ns	write_dict
+   9.7 ns	write_strdict
+
+Stack (or queue) operations:
+  11.9 ns	list_append_pop
+  13.8 ns	deque_append_pop
+  13.9 ns	deque_append_popleft
+
+Timing loop overhead:
+   0.1 ns	loop_overhead
+-----
+Python 3.12
+
+Variable and attribute read access:
+   1.9 ns	read_local
+   1.9 ns	read_nonlocal
+   2.2 ns	read_global
+   2.9 ns	read_builtin
+   4.0 ns	read_classvar_from_class
+  11.8 ns	read_classvar_from_instance
+   3.5 ns	read_instancevar
+   3.6 ns	read_instancevar_slots
+   9.2 ns	read_namedtuple
+  23.0 ns	read_boundmethod
+
+Variable and attribute write access:
+   1.9 ns	write_local
+   1.9 ns	write_nonlocal
+   8.6 ns	write_global
+  23.0 ns	write_classvar
+   3.9 ns	write_instancevar
+   3.7 ns	write_instancevar_slots
+
+Data structure read access:
+   3.9 ns	read_list
+   8.1 ns	read_deque
+   6.5 ns	read_dict
+   7.2 ns	read_strdict
+
+Data structure write access:
+   4.3 ns	write_list
+   8.6 ns	write_deque
+   9.7 ns	write_dict
+  10.4 ns	write_strdict
+
+Stack (or queue) operations:
+  12.6 ns	list_append_pop
+  14.8 ns	deque_append_pop
+  15.1 ns	deque_append_popleft
+
+Timing loop overhead:
+   0.1 ns	loop_overhead
+-----
+PyPy 3.8
+
+Variable and attribute read access:
+ 0.027 ns	read_local
+ 0.028 ns	read_nonlocal
+ 0.025 ns	read_global
+ 0.025 ns	read_builtin
+ 0.025 ns	read_classvar_from_class
+ 0.024 ns	read_classvar_from_instance
+ 0.024 ns	read_instancevar
+ 0.024 ns	read_instancevar_slots
+ 0.024 ns	read_namedtuple
+ 0.024 ns	read_boundmethod
+
+Variable and attribute write access:
+ 0.024 ns	write_local
+ 0.024 ns	write_nonlocal
+ 0.024 ns	write_global
+ 0.225 ns	write_classvar
+ 0.024 ns	write_instancevar
+ 0.024 ns	write_instancevar_slots
+
+Data structure read access:
+ 0.024 ns	read_list
+ 2.462 ns	read_deque
+ 0.314 ns	read_dict
+ 5.749 ns	read_strdict
+
+Data structure write access:
+ 0.024 ns	write_list
+ 2.310 ns	write_deque
+ 4.791 ns	write_dict
+ 7.362 ns	write_strdict
+
+Stack (or queue) operations:
+ 3.198 ns	list_append_pop
+ 3.824 ns	deque_append_pop
+ 6.069 ns	deque_append_popleft
+
+Timing loop overhead:
+ 0.024 ns	loop_overhead
+-----
+PyPy 3.10
+
+Variable and attribute read access:
+ 0.026 ns	read_local
+ 0.026 ns	read_nonlocal
+ 0.025 ns	read_global
+ 0.025 ns	read_builtin
+ 0.025 ns	read_classvar_from_class
+ 0.024 ns	read_classvar_from_instance
+ 0.024 ns	read_instancevar
+ 0.024 ns	read_instancevar_slots
+ 0.024 ns	read_namedtuple
+ 0.024 ns	read_boundmethod
+
+Variable and attribute write access:
+ 0.024 ns	write_local
+ 0.024 ns	write_nonlocal
+ 0.024 ns	write_global
+ 0.224 ns	write_classvar
+ 0.024 ns	write_instancevar
+ 0.024 ns	write_instancevar_slots
+
+Data structure read access:
+ 0.024 ns	read_list
+ 2.204 ns	read_deque
+ 0.313 ns	read_dict
+ 5.687 ns	read_strdict
+
+Data structure write access:
+ 0.024 ns	write_list
+ 2.448 ns	write_deque
+ 4.809 ns	write_dict
+ 7.216 ns	write_strdict
+
+Stack (or queue) operations:
+ 3.445 ns	list_append_pop
+ 3.819 ns	deque_append_pop
+ 6.230 ns	deque_append_popleft
+
+Timing loop overhead:
+ 0.024 ns	loop_overhead
